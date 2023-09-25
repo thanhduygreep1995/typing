@@ -16,4 +16,10 @@ export class AppComponent {
     //   this.solved = true;
     // }
   }
+  compare(randomLetter: string, enteredLetter: string) {
+    if (!enteredLetter) {
+      return 'pending';
+    }
+    return enteredLetter === randomLetter ? 'correct' : 'incorrect';
+  }
 }
